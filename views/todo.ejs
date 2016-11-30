@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+<body>
+<div id="todo-table">
+<form  method="POST" action="/todo">
+<input type="text" name="item" placeholder="ADD Item.." required />
+<button type="submit">Addd Iem</button>
+</form>
+<br>
+</br>
+<ul>
+<br></br>
+
+<br></br>
+
+<% for(var i=0 ;i<todos.length;i++){ %>
+
+<li><%=  todos[i].item %></li>
+<% }  %>
+</ul>
+</div>
+</body>
+</head>
+
+
+
